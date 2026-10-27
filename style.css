@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 /* 1. TYPE SELECTORS */
 body {
   font-family: Arial, sans-serif;
@@ -80,4 +83,36 @@ footer {
   background-color: #1e293b;
   color: #ffffff;
   border: 2px solid #f59e0b;
+}
+
+/* Flexbox Navigation (stacked on mobile) */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* 1. Tablet Viewport (768px+) */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* 2. Desktop Viewport (1200px+) */
+@media (min-width: 1200px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
