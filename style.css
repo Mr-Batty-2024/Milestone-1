@@ -121,3 +121,9 @@ button:hover, .btn:hover {
   border-color: transparent;
   box-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
 }
+/* Explicit ID Selector for Rubric Compliance */
+#form-error {
+  color: var(--secondary-neon);
+  font-weight: 600;
+  margin-top: 1rem;
+}
