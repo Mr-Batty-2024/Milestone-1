@@ -60,18 +60,64 @@ nav a:hover {
 
 /* Interactive Elements & Buttons */
 button, .btn {
-    background: transparent;
-    color: var(--primary-neon);
-    border: 1px solid var(--primary-neon);
-    font-family: var(--font-heading);
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.3s ease;
+  background: transparent;
+  color: var(--primary-neon);
+  border: 1px solid var(--primary-neon);
+  font-family: var(--font-heading);
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
 }
 
 button:hover, .btn:hover {
-    background: var(--primary-neon);
-    color: #000;
-    box-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+  background: var(--primary-neon);
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+}
+
+/* Accessible Contact Form Styles */
+.contact-form fieldset {
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background: var(--card-bg);
+}
+
+.contact-form legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: var(--primary-neon);
+  font-family: var(--font-heading);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.65rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid var(--primary-neon);
+  border-color: transparent;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
 }
